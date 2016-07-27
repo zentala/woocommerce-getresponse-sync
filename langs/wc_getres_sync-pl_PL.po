@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce to GetResponse Syncing\n"
+"POT-Creation-Date: 2016-06-19 18:10+0200\n"
+"PO-Revision-Date: 2016-06-19 18:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: index.php\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: index.php:81
+msgid "WooCommerce is required."
+msgstr ""
+
+#: index.php:89
+msgid "PHP 5.3 is required."
+msgstr ""
+
+#: index.php:96
+msgid "WordPress 4.5 is required."
+msgstr ""
+
+#: index.php:117
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: index.php:127 index.php:128 index.php:144
+msgid "GetResponce Sync"
+msgstr "GetResponce Sync"
+
+#: index.php:156
+msgid "Save Changes"
+msgstr "Zapisz zmiany"
+
+#: index.php:175
+msgid "GetResponce Settings"
+msgstr "Ustawienia GetResponse"
+
+#: index.php:181
+msgid "GetResponse API Key"
+msgstr "Klucz API GetResponse"
+
+#: index.php:189
+msgid "GetResponse Campagin"
+msgstr "Kampania GetResponse"
+
+#: index.php:197
+msgid "WooCommerce Product"
+msgstr "Produkt WooCommerce"
+
+#: index.php:225
+msgid "Connected. Choose campagin."
+msgstr "Połączono. Wybierz kampanię."
+
+#: index.php:228
+msgid "Invalid API key."
+msgstr "Niewłaściwy klucz API."
+
+#: index.php:234
+msgid "Can't connect now. Try again."
+msgstr ""
+
+#: index.php:238
+msgid "API call failed. Probably GetResponse API class is outdated. "
+msgstr ""
+
+#: index.php:242
+msgid "Enter GetResponse API key."
+msgstr "Podaj klucz API."
+
+#: index.php:374 index.php:395
+msgid "Need connection to show campagins list."
+msgstr ""
+
+#: index.php:381
+msgid "select campagin"
+msgstr "wybierz kampanię"
+
+#: index.php:412
+msgid "select product"
+msgstr "wybierz produkt"
+
+#: index.php:416
+msgid "All products"
+msgstr "Wszystkie produkty"
+
+#: index.php:433
+msgid "No products found"
+msgstr "Nie znaleziono produktów"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce - GetResponse Syncing"
+msgstr "WooCommerce - Synchronizacja z GetResponse "
+
+#. Plugin URI of the plugin/theme
+msgid "http://zentala.pl/woocommerce-getresponse-syncing/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Sync customers data between WooCommerce and GetResponse."
+msgstr "Synchronizuj klientów pomiędzy WooCommerce, a GetResponse."
+
+#. Author of the plugin/theme
+msgid "Paul Zentala"
+msgstr "Paweł Żentała"
+
+#. Author URI of the plugin/theme
+msgid "http://zentala.co.uk"
+msgstr "http://zentala.pl"
