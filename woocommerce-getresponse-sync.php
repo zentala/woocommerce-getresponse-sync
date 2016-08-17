@@ -56,36 +56,19 @@ class ZntlGetresponseSync {
         add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array($this, 'add_action_links') );
         set_error_handler(array($this, 'error_handler'), E_USER_ERROR);
         add_action('admin_notices', array($this, 'notices'),100);
-        add_action('admin_init', array($this, 'test'), 1);
         
     }
-    
-    public function test() 
-    {        
-        if( strpos($_SERVER['SERVER_NAME'], "bethewolf") == false ) {
-            echo "wyłącz";
-            $notices = get_option('wc_getres_sync_admin_notices', array());
-            $notices['php']= array('Nie posiadasz licencji na tę wtyczkę. <a href=mailto:pawel@zentala.pl>Napisz do twórcy</a>, aby ją zakupić.', 'error');
-            deactivate_plugins( plugin_basename( __FILE__ ) );
-            update_option('wc_getres_sync_admin_notices', $notices);
-        }            
-    }
+  
     
     
     // Plugin activation ************************************************************
     public static function plugin_activation() {
-//        echo "eee";
-//        deactivate_plugins( plugin_basename( __FILE__ ));
-//        wp_die();
-//        $notices= get_option('wc_getres_sync_admin_notices', array());
-        
         update_option('wc_getres_sync_admin_notices', array());
         $notices = array();
         
         // WC active check
         if (!is_plugin_active('woocommerce/woocommerce.php')) {
             $notices['woo']= array('WooCommerce is required.', 'error');
-//            update_option('wc_getres_sync_');
             deactivate_plugins( plugin_basename( __FILE__ ));
         }
 
@@ -110,9 +93,6 @@ class ZntlGetresponseSync {
     
     // Plugin init ******************************************************************
     public function init_plugin() {
-//        update_option('wc_getres_sync_admin_notices', array());
-//        $notices = array();
-        
         $this->options = get_option('wc_getres_sync_options');
         $this->verify_api_key();
         load_plugin_textdomain( 'wc_getres_sync', FALSE, basename( dirname( __FILE__ ) ) . '/langs/' );
@@ -153,15 +133,6 @@ class ZntlGetresponseSync {
             <form method="post" action="options.php" enctype="multipart/form-data">
                 <?php settings_fields('wc_getres_sync_options'); ?>
                 <?php do_settings_sections(__FILE__); ?>
-<!--
-                <?php echo "<pre>"; print_r($this->options); echo "</pre>"; ?>
-                <?php 
-                    echo "<pre>"; 
-                    $emails = get_option('wc_getres_sync_old_mails'); 
-                    print_r($emails); 
-                    echo "</pre>"; 
-                ?>
--->
                 <p class="submit">
                     <input type="submit" class="button-primary" value="<?php esc_html_e('Save Changes'); ?>">
                 </p>
@@ -225,7 +196,6 @@ class ZntlGetresponseSync {
     {
         $key = $this->options['wc_getres_sync_api_key']; 
         $notices = get_option('wc_getres_sync_admin_notices', array());
-//        $notices = array();
         
         if(!empty($key)) {
             try {
