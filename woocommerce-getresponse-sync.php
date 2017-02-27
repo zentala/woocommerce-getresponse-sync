@@ -4,7 +4,7 @@ Plugin Name:        WooCommerce - GetResponse Syncing
 Plugin URI:         http://zentala.pl/woocommerce-getresponse-syncing/
 Description:        Sync customers data between WooCommerce and GetResponse.
 Author:             Paul Zentala
-Author URI:         http://zentala.co.uk
+Author URI:         http://zentala.pl/
 Version:            1.0
 License:            CC BY-NC-SA 4.0
 License URI:        http://creativecommons.org/licenses/by-nc-sa/4.0/
