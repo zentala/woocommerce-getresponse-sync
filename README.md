@@ -1,5 +1,7 @@
 # WooCommerce - GetResponse Sync
-This plugin is designed to WooCommerce and GetResponse users. It helps you create simple marketing automation system by creating list of clients (people who finish order). You can sync with GetResponse all clients or just those, who bought specyfic product. 
+Simple marketing automation tool, that allows you to automatically add emails of new clients from WooCommerce to the GetResponse email list. 
+
+**WARNING:** This plugin is DEPRECATED and compatible with current version of the WordPress and GetResponse. It can be used only as a reference for a new project. 
 
 ## Configuration
 0. Install WooCommerce & create products
